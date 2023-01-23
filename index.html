@@ -18,6 +18,11 @@
 	<meta name="msapplication-TileImage" content="img/favicon-270-270.png">
 
 	<!-- Google fonts -->
+	<!-- Preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Montserrat: 300, 300i, 400, 400i, 500, 500i, 600, 600i, 700, 700i, 800, 800i, 900, 900i * temp * -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 	<!-- CSS files -->
 	<!-- 1: normalize.css ( https://github.com/necolas/normalize.css ) -->
@@ -29,7 +34,23 @@
 </head>
 <body>
 
-<!-- * content * -->
+<!-- main container -->
+<div class="mw-container mw-clearfix">
+
+	<!-- left column (header) -->
+	<header class="mw-page-header mw-column mw-left-column">Col 1 (left)</header>
+	<!-- end: left column -->
+
+	<!-- right column (main container with vertical menu) -->
+	<main class="mw-main-content mw-column mw-right-column">Col 2 (right)</main>
+	<!-- end: right column -->
+
+</div>
+<!-- end: main container -->
+
+<!-- page footer -->
+<footer class="mw-page-footer mw-container">Page footer</footer>
+<!-- end: page footer -->
 
 <!-- JS files -->
 <!-- Placed at the end of the document so the pages load faster -->

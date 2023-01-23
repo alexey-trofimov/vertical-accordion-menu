@@ -27,7 +27,47 @@ Some common styles
 	clear: both;
 }
 
+/* container */
+.mw-container {
+	max-width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* column */
+.mw-column {
+	width: 50%;
+	min-height: 1px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.mw-column.mw-left-column {
+	float: left;
+}
+.mw-column.mw-right-column {
+	float: right;
+}
+
 
 /*
+Page header
 --------------------------------------------------------
 */
+
+.mw-page-header {}
+
+
+/*
+Page footer
+--------------------------------------------------------
+*/
+
+.mw-page-footer {
+	margin-bottom: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
