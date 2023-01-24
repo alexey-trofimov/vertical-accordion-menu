@@ -20,6 +20,12 @@ Some common styles
 	box-sizing: border-box;
 }
 
+/* body */
+body {
+	color: #000000;
+	background-color: #fefefe;
+}
+
 /* clearfix */
 .mw-clearfix::after {
 	content: '';
@@ -52,11 +58,65 @@ Some common styles
 
 
 /*
-Page header
+Page header (left column)
 --------------------------------------------------------
 */
 
-.mw-page-header {}
+.mw-page-header {
+	font-family: 'Montserrat', sans-serif;
+}
+.mw-page-title {
+	margin: 0 0 50px;
+	font-size: 74px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	line-height: 1.15;
+	text-transform: capitalize;
+	color: #2f303b;
+}
+.mw-page-description {
+	margin: 0 0 45px;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	line-height: 1.7;
+	color: #424451;
+}
+.mw-download-link {
+	display: inline-block;
+	padding: 5px 0;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	line-height: 1.7;
+	color: #5b74ff;
+	text-decoration: none;
+
+	-webkit-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
+}
+.mw-download-link:hover,
+.mw-download-link:focus {
+	color: #7f92ff;
+}
+.mw-download-link i {
+	margin-left: 10px;
+
+	-webkit-transition: margin-left 0.2s ease-out;
+	transition: margin-left 0.2s ease-out;
+}
+.mw-download-link:hover i {
+	margin-left: 15px;
+}
+
+
+/*
+Vertical menu
+--------------------------------------------------------
+*/
+
+/* ** ** */
+
 
 
 /*
@@ -66,8 +126,49 @@ Page footer
 
 .mw-page-footer {
 	margin-bottom: 100px;
+	padding-top: 50px;
 	padding-right: 20px;
 	padding-left: 20px;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.2px;
+	line-height: 1.7;
+	color: #424451;
 }
+.mw-page-footer::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: calc(100% - 40px);
+	height: 1px;
+	background-color: #eeeef1;
+}
+.mw-page-footer p {
+	margin: 0 0 30px;
+}
+.mw-page-footer > :last-child {
+	margin-bottom: 0;
+}
+.mw-page-footer a {
+	text-decoration: none;
+	color: #5b74ff;
 
-
+	-webkit-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
+}
+.mw-page-footer a:hover,
+.mw-page-footer a:focus {
+	text-decoration: underline;
+	color: #7f92ff;
+}
+.mw-page-footer strong {
+	font-weight: 500;
+}
+.mw-page-footer i.fa-heart {
+	margin-right: 3px;
+	margin-left: 3px;
+}
