@@ -33,6 +33,20 @@ body {
 	clear: both;
 }
 
+/* screen reader text (text meant only for screen readers) */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	overflow-wrap: normal !important;
+}
+
 /* container */
 .mw-container {
 	max-width: 940px;
@@ -111,11 +125,15 @@ Page header (left column)
 
 
 /*
-Vertical menu
+Vertical menu ** E **
 --------------------------------------------------------
 */
 
-/* ** ** */
+/* vertical menu container (nav) */
+.mw-vertical-menu-container {}
+
+/* menu items (ul>li>a...) */
+.mw-vertical-menu-items {}
 
 
 
