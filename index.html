@@ -49,15 +49,15 @@
 	<main class="mw-main-content mw-column mw-right-column">
 		<h2 class="screen-reader-text">Vertical menu:</h2>
 
-		<!-- vertical menu container -->
-		<nav id="mw-vertical-menu" class="mw-vertical-menu-container">
-			<!-- menu items ** E ** -->
+		<!-- vertical menu container ** E-js ** -->
+		<nav id="mw-vertical-menu" class="mw-vertical-menu-container mw-float-right">
+			<!-- menu items -->
 			<ul class="mw-vertical-menu-items">
 				<li>
 					<a href="#">Homepage</a>
 				</li>
-				<li>
-					<a href="#">Archives</a>
+				<li class="mw-menu-item-has-children">
+					<a href="#">Archives<span class="mw-toggle-sub-menu"><i class="fa-solid fa-chevron-down"></i></span></a>
 					<ul class="mw-sub-menu">
 						<li>
 							<a href="#">Archive By Day</a>
@@ -76,7 +76,7 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				<li class="mw-menu-item-has-children">
 					<a href="#">Single Posts</a>
 					<ul class="mw-sub-menu">
 						<li>
@@ -88,7 +88,7 @@
 						<li>
 							<a href="#">Video Post</a>
 						</li>
-						<li>
+						<li class="mw-menu-item-has-children">
 							<a href="#">Audio Post</a>
 							<ul class="mw-sub-menu">
 								<li>
@@ -101,7 +101,7 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				<li class="mw-menu-item-has-children">
 					<a href="#">Pages</a>
 					<ul class="mw-sub-menu">
 						<li>
