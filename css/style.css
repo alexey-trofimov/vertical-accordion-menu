@@ -129,6 +129,22 @@ Vertical menu
 --------------------------------------------------------
 */
 
+/* box-sizing for the menu */
+.mw-border-box,
+.mw-border-box * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mw-border-box::before,
+.mw-border-box::after,
+.mw-border-box *::before,
+.mw-border-box *::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 /* align the menu container to the right (style for demonstration purposes only) */
 .mw-vertical-menu-container.mw-float-right {
 	float: right;
@@ -190,7 +206,7 @@ Vertical menu
 	padding-right: 50px;
 }
 .mw-vertical-menu-items ul {
-	display: none; /* hide all submenus */
+	display: none; /* hide all sub-menus */
 	list-style: none;
 	margin: 0;
 	padding: 0 0 0 20px;
@@ -205,7 +221,7 @@ Vertical menu
 }
 
 /* show/hide submenu (arrow icon) */
-.mw-toggle-sub-menu {
+.mw-vertical-menu-items .mw-toggle-sub-menu {
 	position: absolute;
 	top: 5px;
 	right: 0;
@@ -223,11 +239,17 @@ Vertical menu
 	-webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
 	transition: color 0.2s ease-out, background-color 0.2s ease-out;
 }
-.mw-toggle-sub-menu:hover {
+.mw-vertical-menu-items li.mw-sub-menu-visible > a .mw-toggle-sub-menu {
+	background-color: #f1f1f5;
+}
+.mw-vertical-menu-items .mw-toggle-sub-menu:hover,
+.mw-vertical-menu-items li.mw-sub-menu-visible > a .mw-toggle-sub-menu:hover {
 	color: #ffffff;
 	background-color: #5b74ff;
 }
 
+
+/* ** end ** */
 
 
 
