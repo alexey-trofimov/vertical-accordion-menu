@@ -23,7 +23,7 @@ Some common styles
 /* body */
 body {
 	color: #000000;
-	background-color: #ffffff; /* #fefefe */
+	background-color: #ffffff;
 }
 
 /* clearfix */
@@ -298,6 +298,20 @@ Vertical menu
 	font-size: 14px;
 	font-weight: 500;
 	color: #424451;
+}
+
+/* menu item has an external link */
+.mw-vertical-menu-items li.mw-menu-item-has-external-link > a {
+	font-style: italic;
+	font-weight: 500;
+}
+.mw-vertical-menu-items li.mw-menu-item-has-external-link > a::before {
+	display: inline-block;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font: var(--fa-font-solid); /* font awesome: solid style */
+	content: "\f08e"; /* icon: arrow-up-right-from-square */
+	margin-right: 8px;
 }
 
 /* show/hide submenu (arrow icon) */

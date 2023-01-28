@@ -21,8 +21,8 @@
 	<!-- Preconnect -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- Montserrat: 300, 300i, 400, 400i, 500, 500i, 600, 600i, 700, 700i, 800, 800i, 900, 900i * temp * -->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<!-- Montserrat: 400, 400 Italic, 500, 500 Italic, 600, 600 Italic, 800 -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
 	<!-- CSS files -->
 	<!-- 1: normalize.css ( https://github.com/necolas/normalize.css ) -->
@@ -41,7 +41,7 @@
 	<header class="mw-page-header mw-column mw-left-column">
 		<h1 class="mw-page-title">Vertical accordion menu.</h1>
 		<p class="mw-page-description">Vertical menu with dropdown submenus (Accordion). This type of menu is perfect for creating menus for mobile devices, as well as vertical menus for sidebars.</p>
-		<a href="#" target="_blank" rel="noopener noreferrer" class="mw-download-link">Download on GitHub<i class="fa-solid fa-arrow-right"></i></a>
+		<a href="https://github.com/alexey-trofimov/vertical-accordion-menu" target="_blank" rel="noopener noreferrer" class="mw-download-link">Download on GitHub<i class="fa-solid fa-arrow-right"></i></a>
 	</header>
 	<!-- end: left column -->
 
@@ -54,69 +54,92 @@
 			<!-- menu items -->
 			<ul class="mw-vertical-menu-items">
 				<li>
-					<a href="#">Homepage</a>
+					<a href="#homepage-url">Homepage</a>
 				</li>
 				<li class="mw-menu-item-has-children">
-					<a href="#">Archives</a>
+					<a href="#archives-url">Archives</a>
 					<ul class="mw-sub-menu">
 						<li>
-							<a href="#">Archive By Day</a>
+							<a href="#archive-by-day-url">Archive By Day</a>
 						</li>
 						<li>
-							<a href="#">Category Page</a>
+							<a href="#category-page-url">Category Page</a>
 						</li>
 						<li>
-							<a href="#">Tag Page</a>
+							<a href="#tag-page-url">Tag Page</a>
 						</li>
 						<li>
-							<a href="#">Author Page</a>
+							<a href="#author-page-url">Author Page</a>
 						</li>
 						<li>
-							<a href="#">Search Results</a>
+							<a href="#search-results-url">Search Results</a>
 						</li>
 					</ul>
 				</li>
+				<li>
+					<a href="#portfolio-url">Portfolio</a>
+				</li>
 				<li class="mw-menu-item-has-children">
-					<a href="#">Single Posts</a>
+					<a href="#single-posts-url">Single Posts</a>
 					<ul class="mw-sub-menu">
 						<li>
-							<a href="#">Image Post</a>
+							<a href="#image-post-url">Image Post</a>
 						</li>
 						<li>
-							<a href="#">Gallery Post</a>
-						</li>
-						<li>
-							<a href="#">Video Post</a>
+							<a href="#gallery-post-url">Gallery Post</a>
 						</li>
 						<li class="mw-menu-item-has-children">
-							<a href="#">Audio Post</a>
+							<a href="#video-post-url">Video Post</a>
 							<ul class="mw-sub-menu">
 								<li>
-									<a href="#">Test menu item 1</a>
+									<a href="#video-post-with-image-url">With Image</a>
 								</li>
 								<li>
-									<a href="#">Test menu item 2</a>
+									<a href="#video-post-with-player-url">With Player</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mw-menu-item-has-children">
+							<a href="#audio-post-url">Audio Post</a>
+							<ul class="mw-sub-menu">
+								<li>
+									<a href="#audio-post-with-image-url">With Image</a>
+								</li>
+								<li>
+									<a href="#audio-post-with-player-url">With Player</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</li>
+				<li>
+					<a href="#block-styles-url">Block Styles</a>
+				</li>
 				<li class="mw-menu-item-has-children">
-					<a href="#">Pages</a>
+					<a href="#pages-url">Pages</a>
 					<ul class="mw-sub-menu">
 						<li>
-							<a href="#">Regular Page</a>
+							<a href="#regular-page-url">Regular Page</a>
 						</li>
 						<li>
-							<a href="#">Page 404</a>
+							<a href="#with-right-sidebar-url">With Right Sidebar</a>
+						</li>
+						<li>
+							<a href="#with-left-sidebar-url">With Left Sidebar</a>
+						</li>
+						<li>
+							<a href="#full-width-page-url">Full Width</a>
+						</li>
+						<li>
+							<a href="#page-404-url">Page 404</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="#">Typography</a>
+					<a href="#blog-url">Blog Page</a>
 				</li>
-				<li>
-					<a href="#">Documentation</a>
+				<li class="mw-menu-item-has-external-link">
+					<a href="https://minimalweb.net/" target="_blank" rel="noopener noreferrer">Minimalweb.net</a>
 				</li>
 			</ul>
 			<!-- end: menu items -->
