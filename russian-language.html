@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Title and meta -->
+	<title>Вертикальное Меню Аккордеон</title>
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Вертикальное меню с выпадающими подменю (Аккордеон). Этот тип меню идеально подходит для создания меню для мобильных устройств, а также вертикальных меню для боковых панелей.">
+
+	<!-- Website icons -->
+	<link rel="icon" href="img/favicon-32-32.png" sizes="32x32">
+	<link rel="icon" href="img/favicon-192-192.png" sizes="192x192">
+	<link rel="apple-touch-icon-precomposed" href="img/favicon-180-180.png">
+	<meta name="msapplication-TileImage" content="img/favicon-270-270.png">
+
+	<!-- Google fonts -->
+	<!-- Preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Montserrat: 400, 400 Italic, 500, 500 Italic, 600, 600 Italic, 800 -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+	<!-- CSS files -->
+	<!-- 1: normalize.css ( https://github.com/necolas/normalize.css ) -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- 2: Font Awesome Free Icons v6.2.1 ( https://fontawesome.com/icons ) -->
+	<link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+	<!-- 3: Main stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- main container -->
+<div class="mw-container mw-clearfix">
+
+	<!-- left column (header) -->
+	<header class="mw-page-header mw-column mw-left-column">
+		<h1 class="mw-page-title">Вертикальное меню аккордеон.</h1>
+		<p class="mw-page-description">Вертикальное меню с выпадающими подменю (Аккордеон). Этот тип меню идеально подходит для создания меню для мобильных устройств, а также вертикальных меню для боковых панелей.</p>
+		<a href="https://github.com/alexey-trofimov/vertical-accordion-menu" target="_blank" rel="noopener noreferrer" class="mw-download-link">Скачать на GitHub<i class="fa-solid fa-arrow-right"></i></a>
+	</header>
+	<!-- end: left column -->
+
+	<!-- right column (main container with vertical menu) -->
+	<main class="mw-main-content mw-column mw-right-column">
+		<h2 class="screen-reader-text">Vertical menu:</h2>
+
+		<!-- vertical menu container -->
+		<nav id="mw-vertical-menu" class="mw-vertical-menu-container mw-border-box mw-float-right"><!-- the "mw-float-right" class is for demonstration purposes only -->
+			<!-- menu items -->
+			<ul class="mw-vertical-menu-items">
+				<li>
+					<a href="#homepage-url">Главная страница</a>
+				</li>
+				<li class="mw-menu-item-has-children">
+					<a href="#archives-url">Архивы</a>
+					<ul class="mw-sub-menu">
+						<li>
+							<a href="#archive-by-day-url">Архив По Дню</a>
+						</li>
+						<li>
+							<a href="#category-page-url">Страница Категории</a>
+						</li>
+						<li>
+							<a href="#tag-page-url">Страница Метки</a>
+						</li>
+						<li>
+							<a href="#author-page-url">Страница Автора</a>
+						</li>
+						<li>
+							<a href="#search-results-url">Результаты Поиска</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#portfolio-url">Портфолио</a>
+				</li>
+				<li class="mw-menu-item-has-children">
+					<a href="#single-posts-url">Одиночные Записи</a>
+					<ul class="mw-sub-menu">
+						<li>
+							<a href="#image-post-url">Формат Изображения</a>
+						</li>
+						<li>
+							<a href="#gallery-post-url">Формат Галереи</a>
+						</li>
+						<li class="mw-menu-item-has-children">
+							<a href="#video-post-url">Формат Видео</a>
+							<ul class="mw-sub-menu">
+								<li>
+									<a href="#video-post-with-image-url">С Изображением</a>
+								</li>
+								<li>
+									<a href="#video-post-with-player-url">С Плеером</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mw-menu-item-has-children">
+							<a href="#audio-post-url">Формат Аудио</a>
+							<ul class="mw-sub-menu">
+								<li>
+									<a href="#audio-post-with-image-url">С Изображением</a>
+								</li>
+								<li>
+									<a href="#audio-post-with-player-url">С Плеером</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#block-styles-url">Стили Блоков</a>
+				</li>
+				<li class="mw-menu-item-has-children">
+					<a href="#pages-url">Страницы</a>
+					<ul class="mw-sub-menu">
+						<li>
+							<a href="#regular-page-url">Обычная Страница</a>
+						</li>
+						<li>
+							<a href="#with-right-sidebar-url">Боковая Панель Справа</a>
+						</li>
+						<li>
+							<a href="#with-left-sidebar-url">Боковая Панель Слева</a>
+						</li>
+						<li>
+							<a href="#full-width-page-url">Полная Ширина</a>
+						</li>
+						<li>
+							<a href="#page-404-url">Страница 404</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#blog-url">Страница Блога</a>
+				</li>
+				<li class="mw-menu-item-has-external-link">
+					<a href="https://minimalweb.net/" target="_blank" rel="noopener noreferrer" title="Перейти на сайт Minimalweb.net">Minimalweb.net</a>
+				</li>
+			</ul>
+			<!-- end: menu items -->
+		</nav>
+		<!-- end: vertical menu container -->
+
+	</main>
+	<!-- end: right column -->
+
+</div>
+<!-- end: main container -->
+
+<!-- page footer -->
+<footer class="mw-page-footer mw-container">
+	<p><a href="https://minimalweb.net/" target="_blank" rel="noopener noreferrer">Minimalweb.net</a> | Создано с <i class="fa-regular fa-heart fa-beat"></i> в 2023. Спасибо за ваш интерес! Пожалуйста, подписывайтесь на меня: <a href="https://www.youtube.com/@MinimalWebDev" target="_blank" rel="noopener noreferrer">YouTube (<em>Minimal Web Dev</em>)</a>, <a href="https://github.com/alexey-trofimov" target="_blank" rel="noopener noreferrer">GitHub (<em>Alexey Trofimov</em>)</a>.</p>
+	<p>Демонстрация на <a href="index.html"><strong>Английском здесь</strong></a>.</p>
+</footer>
+<!-- end: page footer -->
+
+<!-- JS files -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- 1: jQuery 3.6.3 ( https://jquery.com/download/ ) -->
+<script src="js/jquery-3.6.3.min.js"></script>
+<!-- 2: Main js file -->
+<script src="js/main.js"></script>
+</body>
+</html>

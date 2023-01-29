@@ -112,7 +112,7 @@ Page header (left column)
 }
 .mw-page-title {
 	margin: 0 0 50px;
-	font-size: 74px;
+	font-size: 60px;
 	font-weight: 800;
 	letter-spacing: 1px;
 	line-height: 1.15;
@@ -154,16 +154,30 @@ Page header (left column)
 	margin-left: 15px;
 }
 
+/* Page header: Russian language */
+html:lang(ru) .mw-page-title {
+	font-size: 50px;
+}
+html:lang(ru) .mw-page-description,
+html:lang(ru) .mw-download-link {
+	font-size: 19px;
+}
+
 /* Page header: Responsive styles */
 
 /* 959px */
 @media (max-width: 959px) {
 
-	.mw-page-title {
-		font-size: 60px;
-	}
 	.mw-page-description,
 	.mw-download-link {
+		font-size: 18px;
+	}
+
+	html:lang(ru) .mw-page-title {
+		font-size: 42px;
+	}
+	html:lang(ru) .mw-page-description,
+	html:lang(ru) .mw-download-link {
 		font-size: 18px;
 	}
 
@@ -188,6 +202,16 @@ Page header (left column)
 		line-height: 1.6;
 	}
 
+	html:lang(ru) .mw-page-title {
+		font-size: 40px;
+		line-height: 1.2;
+	}
+	html:lang(ru) .mw-page-description,
+	html:lang(ru) .mw-download-link {
+		font-size: 17px;
+		line-height: 1.6;
+	}
+
 }
 
 /* 399px */
@@ -199,6 +223,24 @@ Page header (left column)
 	.mw-page-description,
 	.mw-download-link {
 		font-size: 16px;
+	}
+
+	html:lang(ru) .mw-page-title {
+		font-size: 31px;
+	}
+	html:lang(ru) .mw-page-description,
+	html:lang(ru) .mw-download-link {
+		font-size: 16px;
+	}
+
+}
+
+/* 319px */
+@media (max-width: 319px) {
+
+	html:lang(ru) .mw-page-title {
+		font-size: 26px;
+		line-height: 1.3;
 	}
 
 }
