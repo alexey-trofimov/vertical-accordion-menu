@@ -1,5 +1,6 @@
 /*
-Main js file
+Vertical accordion menu: Main js file
+main.js v1.0
 */
 
 ( function( $ ) {

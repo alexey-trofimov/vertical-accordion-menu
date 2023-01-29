@@ -1,9 +1,29 @@
 /*
-Main stylesheet
+Vertical accordion menu: Main stylesheet
+style.css v1.0
+
+Project name: Vertical Accordion Menu
+Project URL: https://demo.minimalweb.net/vertical-accordion-menu/
+Version: 1.0
+Author: Alexey Trofimov
+Author URL: https://minimalweb.net/
+License: GPLv3
+License URL: https://www.gnu.org/licenses/gpl-3.0.html
+
+Copyright (C) 2023 Alexey Trofimov
 */
 
 /*
-Some common styles
+Table of Contents:
+
+1 - Some common styles
+2 - Page header (left column)
+3 - Vertical menu
+4 - Page footer
+*/
+
+/*
+1 - Some common styles
 --------------------------------------------------------
 */
 
@@ -102,7 +122,7 @@ body {
 
 
 /*
-Page header (left column)
+2 - Page header (left column)
 --------------------------------------------------------
 */
 
@@ -247,7 +267,7 @@ html:lang(ru) .mw-download-link {
 
 
 /*
-Vertical menu
+3 - Vertical menu
 --------------------------------------------------------
 */
 
@@ -430,7 +450,7 @@ Vertical menu
 
 
 /*
-Page footer
+4 - Page footer
 --------------------------------------------------------
 */
 
